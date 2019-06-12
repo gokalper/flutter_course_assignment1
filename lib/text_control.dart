@@ -11,19 +11,19 @@ class TextControl extends StatefulWidget {
 }
 
 class _TextControl extends State<TextControl> {
-  var appText = 'Some Text';
+  String _appText = 'Some Text';
 
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        TextOutput(appText),
+        TextOutput(_appText),
         RaisedButton(
           color: Theme.of(context).primaryColor,
           onPressed: () {
             setState(() {
               var random = new Random();
               var someValue = random.nextInt(100);
-              appText = 'New Text $someValue';
+              _appText = 'New Text $someValue';
             });
           },
           child: Text('New Text'),
