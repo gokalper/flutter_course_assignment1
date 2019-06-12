@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TextOutput extends StatelessWidget {
-  final appText;
+  final String appText;
 
   TextOutput(this.appText);
 
